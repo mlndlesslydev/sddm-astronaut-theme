@@ -1,7 +1,7 @@
 #!/bin/sh
 
-## Keyitdev https://github.com/Keyitdev/sddm-astronaut-theme
-## Copyright (C) 2022-2025 Keyitdev
+## mlndlesslydev https://github.com/mlndlesslydev/sddm-astronaut-theme
+## Copyright (C) 2022-2025 mlndlesslydev
 ## Distributed under the GPLv3+ License https://www.gnu.org/licenses/gpl-3.0.html
 
 red='\033[0;31m'
@@ -36,7 +36,7 @@ install_dependencies(){
 git_clone(){
     echo -e "${green}[*] Cloning theme to $path_to_git_clone.${no_color}"
     [ -d "$path_to_git_clone"/sddm-astronaut-theme ] && sudo mv "$path_to_git_clone"/sddm-astronaut-theme "$path_to_git_clone"/sddm-astronaut-theme_$date && echo -e "${green}[*] Old configs detected in $path_to_git_clone, backing up.${no_color}"
-    git clone -b master --depth 1 https://github.com/keyitdev/sddm-astronaut-theme.git "$path_to_git_clone"/sddm-astronaut-theme
+    git clone -b master --depth 1 https://github.com/mlndlesslydev/sddm-astronaut-theme.git "$path_to_git_clone"/sddm-astronaut-theme
 }
 
 copy_files(){
@@ -90,7 +90,7 @@ select_theme(){
 
 while true; do
     clear
-    echo -e "${green}sddm-astronaut-theme made by Keyitdev${no_color}"
+    echo -e "${green}sddm-astronaut-theme made by mlndlesslydev${no_color}"
     echo -e "${green}[*] Choose option.${no_color}"
     echo -e "1. All of the below."
     echo -e "2. Install dependencies with package manager."
